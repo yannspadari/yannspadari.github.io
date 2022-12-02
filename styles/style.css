@@ -355,6 +355,12 @@ section{
 	letter-spacing: 2px;
 }
 
+.banner-title h1 span{
+	font-family: 'Solway', sans-serif;
+	font-size: 25px;
+	letter-spacing: 2px;
+}
+
 .green {
 	width: 100%;
 	z-index: -1;
@@ -480,7 +486,7 @@ section{
 .outils-text h2 {
 	letter-spacing: 2px;
 	position: relative;
-	padding: 20px 10%;
+	padding: 20px 7%;
 	font-family: "Solway", sans-serif;
 	font-weight: 400;
 	font-size: 19px;
@@ -490,7 +496,7 @@ section{
 
 .outils-text p {
 	width: 100%;
-	padding: 20px 10%;
+	padding: 20px 7%;
 	font-size: 20px;
 	color:var(--text-color);
 	line-height: 35px;
@@ -521,7 +527,7 @@ section{
 .outils-text2 h2 {
 	letter-spacing: 2px;
 	position: relative;
-	padding: 20px 10%;
+	padding: 20px 7%;
 	font-family: "Solway", sans-serif;
 	font-weight: 400;
 	font-size: 19px;
@@ -530,7 +536,7 @@ section{
 
 .outils-text2 p {
 	width: 100%;
-	padding: 20px 10%;
+	padding: 20px 7%;
 	font-size: 20px;
 	color:#fff;
 	line-height: 35px;
@@ -558,7 +564,7 @@ section{
 .changements-text h2 {
 	letter-spacing: 2px;
 	position: relative;
-	padding: 20px 10%;
+	padding: 20px 7%;
 	font-family: "Solway", sans-serif;
 	font-weight: 400;
 	font-size: 19px;
@@ -568,7 +574,7 @@ section{
 
 .changements-text p {
 	width: 100%;
-	padding: 20px 10%;
+	padding: 20px 7%;
 	font-size: 20px;
 	color:var(--text-color);
 	line-height: 35px;
