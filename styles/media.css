@@ -355,6 +355,11 @@ footer p {
 	.lien-rdv span{
 		display: none;
 	}
+	
+	.banner-title h1 {
+	font-size: 17px;
+	letter-spacing: 1px;
+	}
 
 }
 
