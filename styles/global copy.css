@@ -9,7 +9,7 @@
 
   /* =========== Header Height =========== */
 
-    --header-height: 180px;
+    --header-height: 150px;
     --header-mobile-height: 80px;
 
   /* =========== Colors =========== */
@@ -25,15 +25,14 @@
 
     --body-font-family: 'Solway', sans-serif;
 
-    --h1-font-size: 4.5rem;
+    --h1-font-size: 3rem;
     --h2-font-size: 2.4rem;
-    --h3-font-size: 1.9rem;
-    --title-font-size: 1.9rem;
-    --normal-font-size: 1.7rem;
-    --small-font-size: 1.7rem;
-    --link-font-size: 1.5rem;
+    --h3-font-size: 2.5rem;
+    --normal-font-size: 1.5rem;
+    --small-font-size: 1.5rem;
+    --link-font-size: 1.3rem;
     --link-font-size-alt: 1.5rem;
-    --button-font-size: 1.7rem;
+    --button-font-size: 1.6rem;
 
   /* =========== Font weight =========== */
 
@@ -41,6 +40,24 @@
     --font-big: 500;
 
 }
+
+    /* ======== Responsive Typo ======== */
+
+    @media screen and (min-width: 768px) {
+
+      :root{
+
+        --h1-font-size: 4.5rem;
+        --h2-font-size: 2.4rem;
+        --h3-font-size: 1.9rem;
+        --normal-font-size: 1.7rem;
+        --small-font-size: 1.7rem;
+        --link-font-size: 1.6rem;
+        --button-font-size: 1.7rem;
+
+      }
+
+    }
 
 /* ====================== BASE ====================== */
 
@@ -103,10 +120,10 @@ p {
     font-weight: var(--font-medium);
 }
 
-/* img {
+img {
     max-width: 100%;
     height: auto;
-} */
+}
 
 button,input {
 border: none;
@@ -126,42 +143,30 @@ button {
 /* ====================== LAYOUTS ====================== */
 
 .empty {
-  height: var(--header-height);
+  height: var(--header-mobile-height);
   background-color: var(--hero-color);
-}
-
-.container{
-  max-width: 96rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.br-footer {
-  display: none;
 }
 
 /* ====================== HEADER ====================== */   
 
 .header {
-  filter:none;
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   background-color: var(--bg-color);
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4));
   }
 
 /* =========== Header Navbar =========== */
 
 .nav{
-  height: var(--header-height);
+  height: var(--header-mobile-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  margin: 10px 20px;
   }
-  
-/* =========== Header Logo =========== */
   
 .nav__logo{
   display: flex;
@@ -171,18 +176,17 @@ button {
 }
 
 .nav__logo-img{
-  width: 140px;
+  display: none;
+  width: 80px;
 }
 
 .nav__logo-mobile-img {
-  display: none;
+  display: initial;
   width: 180px;
 }
 
-/* =========== Header NavList =========== */
-
 .nav__list{
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   row-gap: 1.5rem;
@@ -200,8 +204,7 @@ button {
 .nav__link {
   font-weight: var(--font-big);
   transition: 0.2s ease;
-  padding: 0.5rem;
-  margin: 0 .4rem;
+  padding: 0.5rem
 }
 
 .nav__link:hover{
@@ -212,7 +215,6 @@ button {
 
 #menuToggle
  {
-  display:none;
   position: absolute;
   right: 35px;
   -webkit-user-select: none;
@@ -222,19 +224,19 @@ button {
  
  #menuToggle input
  {
-  display: block;
-  width: 38px;
-  height: 30px;
-  position: absolute;
-  top: -6px;
-  cursor: pointer;
+   display: block;
+   width: 38px;
+   height: 30px;
+   position: absolute;
+   top: -6px;
+   cursor: pointer;
 
-  right: -5.5px;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
+   right: -5.5px;
+   
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   
+   -webkit-touch-callout: none;
  }
  
  /*
@@ -305,7 +307,7 @@ button {
  #menu
  {
    position: absolute;
-   width: 400px;
+   width: 117vw;
    margin: 38px 0 0 0;
    padding: 33px 50px;
    right: -100px;
@@ -358,18 +360,29 @@ footer {
     flex-direction: column;
     bottom: 0;
     background-color: var(--main-color);
-    padding: 8rem 4rem;
+    padding: 5rem 0;
 }
 
 .footer__container {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    /* justify-content: space-evenly; */
     justify-content: space-between;
 }
 
+.footer__link {
+    padding: 0.5rem;
+    line-height: 3rem;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
 .footer__container div p:first-child {
-    font-size: var(--normal-font-size);
+    font-size: 1.5rem;
 }
 
 .footer__container p {
@@ -377,38 +390,37 @@ footer {
     line-height: 2rem;
 }
 
-.footer__container ul {
-  margin-bottom: 2.5rem ;
-}
-
-.footer__container div:nth-child(4) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer__contact-mobile { /* FOOTER CONTACT MODIFIED */
-  display:none;
-  padding: 0.5rem;
-}
-
 .footer__contact {
-  padding: 0.5rem;
-}
-
-.footer__link {
-  padding: 0.5rem;
-  line-height: 3rem;
-}
-
-.footer__link:hover {
-  text-decoration: underline;
+  margin-top: 4rem;
 }
 
 .footer__img {
+  margin-top: 7rem; 
 	max-width: 100%;
 	width: 140px;
 	height: auto;
+}
+
+.footer__container ul {
+  padding: 0 3rem;
+  margin-bottom: 2.5rem ;
+}
+
+.footer__container div {
+  padding: 0 3.5rem;
+}
+
+/* .footer__container div:nth-child(3) { 
+    margin-top: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+
+} */
+
+.footer__container div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer__social {
@@ -444,13 +456,13 @@ footer {
     color: var(--bg-color);
     background-color: var(--button-color);
     padding: 15px 0;
-    width: 36rem;
-    font-size: var(--button-font-size);
+    width: 22rem;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 2px;
     transition: .2s ease;
+    font-size: 13px;
 
 }
 
@@ -458,15 +470,6 @@ footer {
     background-color: var(--hover-color);
 }
 
-.footer__button-mobile {
-  display: none;
-  text-align: center;
-  padding: 2rem 0;
-  background-color: var(--button-color);
-  font-size: var(--button-font-size);
-  color: var(--bg-color);
-}
-
-.footer__button-mobile:hover {
-  background-color: var(--hover-color);
-}
+/* .footer__about {
+  margin-top: 7rem;
+} */
