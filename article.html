@@ -120,217 +120,267 @@
 
             <div class="article__wrapper container">
 
-                <article class="article__content">
+                <div class="article__container">
 
-                    <img class="article__content-img" src="images/test.jpg" alt="Image de l'article">
+                    <article class="article__content">
 
-                    <p class="article__content-category">16/01/2023 — La lucidité</p>
+                        <img class="article__content-img" src="images/test.jpg" alt="Image de l'article">
 
-                    <h2 class="article__content-title">C’est la vie qui m’a formée mais pas que...</h2>
+                        <p class="article__content-category">16/01/2023 — La lucidité</p>
 
-                    <!-- ======================= Audio Player ========================= -->
+                        <h2 class="article__content-title">C’est la vie qui m’a formée mais pas que...</h2>
 
-                    <div class="holder">
+                        <!-- ======================= Audio Player ========================= -->
 
-                        <div class="audio green-audio-player">
+                        <div class="holder">
 
-                            <div class="loading">
+                            <div class="audio green-audio-player">
 
-                                <div class="spinner"></div>
+                                <div class="loading">
 
-                            </div>
-
-                            <div class="play-pause-btn">  
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
-
-                                    <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon" id="playPause"/>
-
-                                </svg>
-
-                            </div>
-
-                            <div class="controls">
-
-                                <span class="current-time">0:00</span>
-
-                                <div class="slider" data-direction="horizontal">
-
-                                    <div class="progress">
-
-                                        <div class="pin" id="progress-pin" data-method="rewind"></div>
-
-                                    </div>
+                                    <div class="spinner"></div>
 
                                 </div>
 
-                                <span class="total-time">0:00</span>
+                                <div class="play-pause-btn">  
+                                
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
 
-                            </div>
-
-                            <div class="volume">
-
-                                <div class="volume-btn">
-
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-
-                                        <path fill="#566574" fill-rule="evenodd" d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z" id="speaker"/>
+                                        <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon" id="playPause"/>
 
                                     </svg>
 
                                 </div>
 
-                            <div class="volume-controls hidden">
+                                <div class="controls">
 
-                                <div class="slider" data-direction="vertical">
+                                    <span class="current-time">0:00</span>
 
-                                    <div class="progress">
+                                    <div class="slider" data-direction="horizontal">
 
-                                        <div class="pin" id="volume-pin" data-method="changeVolume"></div>
+                                        <div class="progress">
+
+                                            <div class="pin" id="progress-pin" data-method="rewind"></div>
+
+                                        </div>
 
                                     </div>
 
+                                    <span class="total-time">0:00</span>
+
                                 </div>
+
+                                <div class="volume">
+
+                                    <div class="volume-btn">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+
+                                            <path fill="#566574" fill-rule="evenodd" d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z" id="speaker"/>
+
+                                        </svg>
+
+                                    </div>
+
+                                <div class="volume-controls hidden">
+
+                                    <div class="slider" data-direction="vertical">
+
+                                        <div class="progress">
+
+                                            <div class="pin" id="volume-pin" data-method="changeVolume"></div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
+
+                            <audio crossorigin>
+
+                                <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3" type="audio/mpeg">
+
+                            </audio>
 
                         </div>
 
-                        <audio crossorigin>
+                        <!-- ========================================= ============ ==================== -->
 
-                            <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3" type="audio/mpeg">
+                        <p class="article__content-text">
+                            
+                            Certifiée en sophrologie depuis 20 ans, en coaching depuis 5 ans, et formée
+                            pour l’accompagnement des transgenres ainsi que celles
+                            qui vivent avec le VIH. Certifiée en sophrologie depuis 20 ans, en coaching depuis 5 ans, 
+                            et formée pour l’accompagnement des personnes transgenres ainsi que celles qui vivent avec le VIH. 
+                            Certifiée en sophrologie depuis 20 ans, en coaching ans, et formée pour l’accomnement des personnes 
+                            transgenres 
+                            ainsi que celles qui vivent avec le VIH. Certifiée en 
+                            sophrologie depuis 20 ans, en coaching depuis
+                            5 ans, et formée pour l’accompagnemen puis 20 ans, 
+                            en coaching depuis 5 ans, et formée pour l’accompagnement des personnes 
+                            transgenres ainsi que celles
+                            qui vivent avec le VIH. Certifiée en sophrologie depuis 20 ans, 
+                            en coaching 5 ans, et formée l’accompagnement des personnes transgenres ainsi que celles
 
-                        </audio>
+                        </p>
 
-                    </div>
+                        <h4 class="article__content-subtitle">Scoaching depuis 5 ans</h4>
 
-                    <!-- ========================================= ============ ==================== -->
+                        <p class="article__content-text">
+                            
+                            Certifiée en sophrologie depuis 20 ans, en coaching depuis 5 ans, et formée
+                            pour l’accompagnement des transgenres ainsi que celles
+                            qui vivent avec le VIH. Certifiée en sophrologie depuis 20 ans, en coaching depuis 5 ans, 
+                            et formée pour l’accompagnement des personnes transgenres ainsi que celles qui vivent avec le VIH. 
+                            Certifiée en sophrologie depuis 20 ans, en coaching ans, et formée pour l’accomnement des personnes 
+                            transgenres 
+                            ainsi que celles qui vivent avec le VIH. Certifiée en 
+                            sophrologie depuis 20 ans, en coaching depuis
+                            5 ans, et formée pour l’accompagnemen puis 20 ans, 
+                            en coaching depuis 5 ans, et formée pour l’accompagnement des personnes 
+                            transgenres ainsi que celles
+                            qui vivent avec le VIH. Certifiée en sophrologie depuis 20 ans, 
+                            en coaching 5 ans, et formée l’accompagnement des personnes transgenres ainsi que celles
 
-                    <p class="article__content-text">
-                        
-                        Certifiée en sophrologie depuis 20 ans, en coaching depuis 5 ans, et formée
-                        pour l’accompagnement des transgenres ainsi que celles
-                        qui vivent avec le VIH. Certifiée en sophrologie depuis 20 ans, en coaching depuis 5 ans, 
-                        et formée pour l’accompagnement des personnes transgenres ainsi que celles qui vivent avec le VIH. 
-                        Certifiée en sophrologie depuis 20 ans, en coaching ans, et formée pour l’accomnement des personnes 
-                        transgenres 
-                        ainsi que celles qui vivent avec le VIH. Certifiée en 
-                        sophrologie depuis 20 ans, en coaching depuis
-                        5 ans, et formée pour l’accompagnemen puis 20 ans, 
-                        en coaching depuis 5 ans, et formée pour l’accompagnement des personnes 
-                        transgenres ainsi que celles
-                        qui vivent avec le VIH. Certifiée en sophrologie depuis 20 ans, 
-                        en coaching 5 ans, et formée l’accompagnement des personnes transgenres ainsi que celles
+                        </p>
 
-                    </p>
+                        <h4 class="article__content-subtitle">Scoaching depuis 5 ans</h4>
 
-                    <h4 class="article__content-subtitle">Scoaching depuis 5 ans</h4>
+                        <p class="article__content-text">
+                            
+                            Certifiée en sophrologie depuis 20 ans, en coaching depuis 5 ans, et formée
+                            pour l’accompagnement des transgenres ainsi que celles
+                            qui vivent avec le VIH. Certifiée en sophrologie depuis 20 ans, en coaching depuis 5 ans, 
+                            et formée pour l’accompagnement des personnes transgenres ainsi que celles qui vivent avec le VIH. 
+                            Certifiée en sophrologie depuis 20 ans, en coaching ans, et formée pour l’accomnement des personnes 
+                            transgenres 
+                            ainsi que celles qui vivent avec le VIH. Certifiée en 
+                            sophrologie depuis 20 ans, en coaching depuis
+                            5 ans, et formée pour l’accompagnemen puis 20 ans, 
+                            en coaching depuis 5 ans, et formée pour l’accompagnement des personnes 
+                            transgenres ainsi que celles
+                            qui vivent avec le VIH. Certifiée en sophrologie depuis 20 ans, 
+                            en coaching 5 ans, et formée l’accompagnement des personnes transgenres ainsi que celles
 
-                    <p class="article__content-text">
-                        
-                        Certifiée en sophrologie depuis 20 ans, en coaching depuis 5 ans, et formée
-                        pour l’accompagnement des transgenres ainsi que celles
-                        qui vivent avec le VIH. Certifiée en sophrologie depuis 20 ans, en coaching depuis 5 ans, 
-                        et formée pour l’accompagnement des personnes transgenres ainsi que celles qui vivent avec le VIH. 
-                        Certifiée en sophrologie depuis 20 ans, en coaching ans, et formée pour l’accomnement des personnes 
-                        transgenres 
-                        ainsi que celles qui vivent avec le VIH. Certifiée en 
-                        sophrologie depuis 20 ans, en coaching depuis
-                        5 ans, et formée pour l’accompagnemen puis 20 ans, 
-                        en coaching depuis 5 ans, et formée pour l’accompagnement des personnes 
-                        transgenres ainsi que celles
-                        qui vivent avec le VIH. Certifiée en sophrologie depuis 20 ans, 
-                        en coaching 5 ans, et formée l’accompagnement des personnes transgenres ainsi que celles
+                        </p>
 
-                    </p>
+                    </article>
 
-                    <h4 class="article__content-subtitle">Scoaching depuis 5 ans</h4>
+                    <aside class="blog__categories">
 
-                    <p class="article__content-text">
-                        
-                        Certifiée en sophrologie depuis 20 ans, en coaching depuis 5 ans, et formée
-                        pour l’accompagnement des transgenres ainsi que celles
-                        qui vivent avec le VIH. Certifiée en sophrologie depuis 20 ans, en coaching depuis 5 ans, 
-                        et formée pour l’accompagnement des personnes transgenres ainsi que celles qui vivent avec le VIH. 
-                        Certifiée en sophrologie depuis 20 ans, en coaching ans, et formée pour l’accomnement des personnes 
-                        transgenres 
-                        ainsi que celles qui vivent avec le VIH. Certifiée en 
-                        sophrologie depuis 20 ans, en coaching depuis
-                        5 ans, et formée pour l’accompagnemen puis 20 ans, 
-                        en coaching depuis 5 ans, et formée pour l’accompagnement des personnes 
-                        transgenres ainsi que celles
-                        qui vivent avec le VIH. Certifiée en sophrologie depuis 20 ans, 
-                        en coaching 5 ans, et formée l’accompagnement des personnes transgenres ainsi que celles
+                        <div class="article__category-name"><p>La lucidité</p></div>
 
-                    </p>
+                        <div class="blog__categories-container">
 
-                </article>
+                            <h3 class="blog__categories-title">Articles récents</h3>
 
-                <aside class="blog__categories">
+                            <ul class="blog__categories-list">
 
-                    <div class="article__category-name"><p>La lucidité</p></div>
+                                <li><a class="blog__categories-link" href="">la motivation</a></li>
+                                <li><a class="blog__categories-link" href="">la confiance en soi</a></li>
+                                <li><a class="blog__categories-link" href="">la peur de l'indépendance</a></li>
+                                <li><a class="blog__categories-link" href="">nous rend fou l'interdépendance</a></li>
+                                <li><a class="blog__categories-link" href="">le changement de vie</a></li>
 
-                    <div class="blog__categories-container">
+                            </ul>
 
-                        <h3 class="blog__categories-title">Articles récents</h3>
+                        </div>
 
-                        <ul class="blog__categories-list">
+                        <div class="blog__categories-container">
 
-                            <li><a class="blog__categories-link" href="">la motivation</a></li>
-                            <li><a class="blog__categories-link" href="">la confiance en soi</a></li>
-                            <li><a class="blog__categories-link" href="">la peur de l'indépendance</a></li>
-                            <li><a class="blog__categories-link" href="">nous rend fou l'interdépendance</a></li>
-                            <li><a class="blog__categories-link" href="">le changement de vie</a></li>
+                            <h3 class="blog__categories-title">Catégories</h3>
 
-                        </ul>
+                            <ul class="blog__categories-list">
 
-                    </div>
+                                <li><a class="blog__categories-link" href="">la motivation</a></li>
+                                <li><a class="blog__categories-link" href="">la confiance en soi</a></li>
+                                <li><a class="blog__categories-link" href="">la peur de l'indépendance</a></li>
+                                <li><a class="blog__categories-link" href="">nous rend fou l'interdépendance</a></li>
+                                <li><a class="blog__categories-link" href="">le changement de vie</a></li>
+                                <li><a class="blog__categories-link" href="">la motivation</a></li>
+                                <li><a class="blog__categories-link" href="">la confiance en soi</a></li>
+                                <li><a class="blog__categories-link" href="">la peur de l'indépendance</a></li>
+                                <li><a class="blog__categories-link" href="">nous rend fou l'interdépendance</a></li>
+                                <li><a class="blog__categories-link" href="">le changement de vie</a></li>
 
-                    <div class="blog__categories-container">
+                            </ul>
 
-                        <h3 class="blog__categories-title">Catégories</h3>
+                        </div>
 
-                        <ul class="blog__categories-list">
+                        <div class="blog__categories-container">
 
-                            <li><a class="blog__categories-link" href="">la motivation</a></li>
-                            <li><a class="blog__categories-link" href="">la confiance en soi</a></li>
-                            <li><a class="blog__categories-link" href="">la peur de l'indépendance</a></li>
-                            <li><a class="blog__categories-link" href="">nous rend fou l'interdépendance</a></li>
-                            <li><a class="blog__categories-link" href="">le changement de vie</a></li>
-                            <li><a class="blog__categories-link" href="">la motivation</a></li>
-                            <li><a class="blog__categories-link" href="">la confiance en soi</a></li>
-                            <li><a class="blog__categories-link" href="">la peur de l'indépendance</a></li>
-                            <li><a class="blog__categories-link" href="">nous rend fou l'interdépendance</a></li>
-                            <li><a class="blog__categories-link" href="">le changement de vie</a></li>
+                            <h3 class="blog__categories-title">Bibliographie</h3>
 
-                        </ul>
+                            <ul class="blog__categories-list">
 
-                    </div>
+                                <li><a class="blog__categories-link" href="">la motivation</a></li>
+                                <li><a class="blog__categories-link" href="">la confiance en soi</a></li>
+                                <li><a class="blog__categories-link" href="">la peur de l'indépendance</a></li>
+                                <li><a class="blog__categories-link" href="">nous rend fou l'interdépendance</a></li>
+                                <li><a class="blog__categories-link" href="">le changement de vie</a></li>
 
-                    <div class="blog__categories-container">
+                            </ul>
 
-                        <h3 class="blog__categories-title">Bibliographie</h3>
+                        </div>
 
-                        <ul class="blog__categories-list">
+                    </aside>
 
-                            <li><a class="blog__categories-link" href="">la motivation</a></li>
-                            <li><a class="blog__categories-link" href="">la confiance en soi</a></li>
-                            <li><a class="blog__categories-link" href="">la peur de l'indépendance</a></li>
-                            <li><a class="blog__categories-link" href="">nous rend fou l'interdépendance</a></li>
-                            <li><a class="blog__categories-link" href="">le changement de vie</a></li>
+                </div>
 
-                        </ul>
+                <h5>Articles similaires</h5>
 
-                    </div>
-
-                </aside>
-
-                <!-- <h5>Articles similaires</h5>
-
-                <div class="article__articles-similar">
+                <div class="article__similar-wrapper">
     
+                    <article class="article__similar-article"><a href="article.html">
+
+                        <img class="article__similar-img" src="images/test.jpg" alt="Image de l'article">
+
+                        <p class="article__similar-category">16/01/2023 - La lucidité</p>
+
+                        <h2 class="article__similar-title">C’est la vie qui m’a formée mais pas que...</h2>
+
+                        <p class="article__similar-content">
+                            Certifiée en sophrologie depuis 20 ans, en coaching depuis 5 ans, 
+                            et formée pour l’accompagnement des personnes transgenres ainsi que celles
+                            qui vivent avec le VIH.
+                        </p>
+
+                    </a></article>
+
+                    <article class="article__similar-article"><a href="article.html">
+
+                        <img class="article__similar-img" src="images/test.jpg" alt="Image de l'article">
+
+                        <p class="article__similar-category">16/01/2023 - La lucidité</p>
+
+                        <h2 class="article__similar-title">C’est la vie qui m’a formée mais pas que...</h2>
+
+                        <p class="article__similar-content">
+                            Certifiée en sophrologie depuis 20 ans, en coaching depuis 5 ans, 
+                            et formée pour l’accompagnement des personnes transgenres ainsi que celles
+                            qui vivent avec le VIH.
+                        </p>
+
+                    </a></article>
+
+                    <article class="article__similar-article"><a href="article.html">
+
+                        <img class="article__similar-img" src="images/test.jpg" alt="Image de l'article">
+
+                        <p class="article__similar-category">16/01/2023 - La lucidité</p>
+
+                        <h2 class="article__similar-title">C’est la vie qui m’a formée mais pas que...</h2>
+
+                        <p class="article__similar-content">
+                            Certifiée en sophrologie depuis 20 ans, en coaching depuis 5 ans, 
+                            et formée pour l’accompagnement des personnes transgenres ainsi que celles
+                            qui vivent avec le VIH.
+                        </p>
+
+                    </a></article>
     
-    
-                </div> -->
+                </div>
 
             </div>
 

@@ -235,7 +235,13 @@
 
 .article__wrapper {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     padding: 4rem 2rem;
+}
+
+.article__container {
+    display: flex;
 }
 
 .article__content {
@@ -259,11 +265,6 @@
 
 .article__content-text {
     margin: 3rem 0;
-}
-
-.article h5 {
-    width: 100%;
-    background-color: #9af5bc;
 }
 
 /* ================== Audio Player ===================== */
@@ -401,4 +402,46 @@
     to {
         transform: rotateZ(1turn);
    }
+}
+
+/* ================ Similar Articles Section ================== */
+
+.article h5 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    background-color: #9af5bc;
+}
+
+.article__similar-img {
+    width: 100%;
+}
+
+.article__similar-wrapper {
+    display: flex;
+}
+
+.article__similar-article {
+    margin: 4.5rem 0;
+}
+
+.article__similar-article:nth-child(2) {
+    margin: 4.5rem 1rem;
+}
+
+.article__similar-category {
+    font-size: var(--similar-smallest-font-size);
+    margin-top: 1.5rem;
+}
+
+.article__similar-title {
+    font-size: var(--similar-h3-font-size);
+    margin: 1.5rem 0;
+    margin-right: 7rem;
+}
+
+.article__similar-content {
+    line-height: 1.5rem;
+    font-size: var(--similar-normal-font-size);
 }
