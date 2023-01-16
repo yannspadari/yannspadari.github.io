@@ -29,6 +29,7 @@
     --h2-font-size: 2.4rem;
     --h3-font-size: 1.9rem;
     --h4-font-size: 1.8rem;
+    --h5-font-size: 1.7rem;
     --title-font-size: 1.9rem;
     --normal-font-size: 17px;
     --small-font-size: 1.7rem;
@@ -71,7 +72,7 @@ ul {
     list-style: none;
 }
 
-h1,h2,h3,h4 {
+h1,h2,h3,h4,h5 {
   color: var(--text-color);
 }
 
@@ -92,6 +93,11 @@ h3 {
 
 h4 {
   font-size: var(--h4-font-size);
+  font-weight: 500;
+}
+
+h5 {
+  font-size: var(--h5-font-size);
   font-weight: 500;
 }
 
